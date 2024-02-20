@@ -169,3 +169,27 @@ main {
   font-weight: 700;
   color: #c7365f;
 }
+
+/* #game-header {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+
+#game-header {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 20px; /* Padding for some space around the text */
+  border-radius: 10px; /* Rounded corners */
+  color: white; /* Text color */
+  font-family: Arial, sans-serif; /* Font family */
+  font-size: 24px; /* Font size */
+  text-align: center; /* Center-align text */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+}
+
+
+
