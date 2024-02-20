@@ -143,6 +143,10 @@ main {
   top: 46.1rem;
 }
 
+.btn--rule {
+  top: 53.1rem;
+}
+
 .btn:active {
   transform: translate(-50%, 3px);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
@@ -191,5 +195,68 @@ main {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
 }
 
+/* Add the following CSS within your existing CSS file or style section */
+
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.rule-popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+
+.rule-content {
+  text-align: center;
+}
+
+.rule-content h2 {
+  font-size: 28px; /* Increase font size for heading */
+  color: #333; /* Dark text color */
+}
+
+.rule-content ol {
+  font-size: 20px; /* Increase font size for rules */
+  list-style-type: none; /* Remove default bullet points */
+  padding-left: 0; /* Remove default padding */
+}
+
+.rule-content ol li {
+  margin-bottom: 10px; /* Add space between list items */
+}
+
+/* Stylish and colorful text for list items */
+.rule-content ol li:nth-child(odd) {
+  color: #007bff; /* Blue color for odd-numbered list items */
+}
+
+.rule-content ol li:nth-child(even) {
+  color: #ff5733; /* Orange color for even-numbered list items */
+}
+
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
 
 

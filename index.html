@@ -27,10 +27,36 @@
         </div>
       </section>
 
+
       <img src="dice-5.png" alt="Playing dice" class="dice" />
       <button class="btn btn--new">🔄 New game</button>
       <button class="btn btn--roll">🎲 Roll dice</button>
       <button class="btn btn--hold">📥 Hold</button>
+      <!-- Add the following within the existing HTML structure -->
+
+<button class="btn btn--rule">📜 Rules</button>
+
+<div class="overlay" id="overlay"></div>
+<div class="rule-popup" id="rule-popup">
+    <div class="rule-content">
+        <span class="close" id="close">&times;</span>
+        <h2>Game Rules</h2>
+        <ol>
+            <li>It is a two player game</li>
+            <li>You have to score 50 to win</li>
+            <li>A person who scores 50 first wins the game</li>
+            <li>You can roll a dice and the score will get added</li>
+            <li>If you get 1 on the dice, the dice sum will be zero</li>
+            <li>If you click on hold, you can hold the current total dice score and it will get added to your actual player score.</li>
+            <li>Once a player wins the game, you won't be able to play. To play again, you need to click on the new game button.</li>
+            <li>When you click on New game, the game will restart.</li>
+        </ol>
+    </div>
+</div>
+
+
+
+      
     </main>
     <script src="script.js"></script>
   </body>

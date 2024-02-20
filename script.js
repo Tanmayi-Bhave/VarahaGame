@@ -110,3 +110,20 @@ btnHold.addEventListener('click', function () {
     //document.querySelector(`.player--${activePlayer}`).classList.add('player--active');
     // document.getElementById(`current--${activePlayer}`).textContent=0;
   }); 
+
+  document.querySelector('.btn--rule').addEventListener('click', function() {
+    document.getElementById('overlay').style.display = 'block';
+    document.getElementById('rule-popup').style.display = 'block';
+});
+
+document.getElementById('close').addEventListener('click', function() {
+    document.getElementById('overlay').style.display = 'none';
+    document.getElementById('rule-popup').style.display = 'none';
+});
+
+document.getElementById('overlay').addEventListener('click', function() {
+    document.getElementById('overlay').style.display = 'none';
+    document.getElementById('rule-popup').style.display = 'none';
+});
+
+
